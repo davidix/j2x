@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<extension type="plugin" group="system" version="1.0" method="upgrade">
+	<name>System - SDX_J2X</name>
+	<creationDate>November 2016</creationDate>
+	<author>Davidix</author>
+	<copyright>Copyright 2016 SayanSystem</copyright>
+    <authorEmail>cms@sayansystem.net</authorEmail>
+    <authorUrl>www.sayansystem.net</authorUrl>
+	<version>1.8</version>
+	<license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPL</license>
+	<description>SDX_J2X by SayanSystem</description>
+	<files>
+		<filename plugin="J2X">J2X.php</filename>
+		<filename>params.php</filename>
+		<filename>index.html</filename>
+		<filename>404.html</filename>
+		<folder>sql</folder>
+		<folder>language</folder>
+	</files>
+	   <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_system_j2x.ini</language>
+    </languages>
+	         <install> <!-- Runs on install -->
+    	<sql>
+        	<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+  		</sql>
+    </install>
+    
+    <uninstall> <!-- Runs on uninstall -->
+    	<sql>
+        	<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+  		</sql>
+	</uninstall>
+	    <config>
+        <fields name="params" >
+            <fieldset name="EOR">
+                <field name="search_replace" type="repeatable" icon="shuffle" label="PLG_SDX_J2X_EOR_SEARCHREPLACE" description="PLG_SDX_J2X_EOR_SEARCHREPLACEDESC" select="PLG_SDX_J2X_EOR_SEARCHREPLACE_BUTTON" default="" filter="raw">
+                    <fieldset hidden="true" name="search_replace_modal" repeat="true">
+                        <field name="search" size="50" filter="raw" type="textarea" label="PLG_SDX_J2X_EOR_SEARCH" description="PLG_SDX_J2X_EOR_SEARCHDESC" />
+                        <field name="replace" size="50" filter="raw" type="textarea" label="PLG_SDX_J2X_EOR_REPLACE" description="PLG_SDX_J2X_EOR_REPLACEDESC" />
+                        <field name="execution" size="50" filter="raw" type="textarea" label="PLG_SDX_J2X_EOR_EXECUTION" description="PLG_SDX_J2X_EOR_EXECUTIONDESC" />
+                        <field name="replace_all" type="list" default="0" label="PLG_SDX_J2X_EOR_REPLACE_ALL" description="PLG_SDX_J2X_EOR_REPLACE_ALLDESC">
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+                        <field name="replace_caseless" type="list" default="0" label="PLG_SDX_J2X_EOR_REPLACE_CASELESS" description="PLG_SDX_J2X_EOR_REPLACE_CASELESSDESC">
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+                        <field name="replace_regex" type="list" default="0" label="PLG_SDX_J2X_EOR_REPLACE_REGEX" description="PLG_SDX_J2X_EOR_REPLACE_REGEXDESC">
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+                    </fieldset>
+                </field>
+                <field name="execute_admin" type="list" default="0" label="PLG_SDX_J2X_EOR_EXECUTEADMIN" description="PLG_SDX_J2X_EOR_EXECUTEADMINDESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="debug" type="list" default="0" label="PLG_SDX_J2X_EOR_DEBUG" description="PLG_SDX_J2X_EOR_DEBUGDESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+            </fieldset>
+			
+				
+
+			
+           
+        </fields>
+    </config>
+</extension>
