@@ -86,8 +86,6 @@ class plgSystemJ2x extends JPlugin
                 $resultUrlKey = J2X::checkSiteUrlKey();
                 if (!empty($resultUrlKey))
                 {
-                    //echo "noredire";
-                    // return true;
                     
                 }
                 else
