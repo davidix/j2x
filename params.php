@@ -1,6 +1,7 @@
 <?php 
 defined( '_JEXEC' ) or die( 'Restricted access' );
 class J2X_C {
+
 	public $publish = '0';
 	public $administrator_publish = '0';
 	public $com_users_publish = '0';
@@ -20,4 +21,5 @@ class J2X_C {
 	public $modules = 'viewers';
 	public $plugins = 'hlp';
 	public $media = 'src';
+	
 }
