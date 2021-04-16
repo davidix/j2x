@@ -33,6 +33,7 @@
 	</uninstall>
 	    <config>
         <fields name="params" >
+
             <fieldset name="EOR">
                 <field name="search_replace" type="repeatable" icon="shuffle" label="PLG_SDX_J2X_EOR_SEARCHREPLACE" description="PLG_SDX_J2X_EOR_SEARCHREPLACEDESC" select="PLG_SDX_J2X_EOR_SEARCHREPLACE_BUTTON" default="" filter="raw">
                     <fieldset hidden="true" name="search_replace_modal" repeat="true">
@@ -62,11 +63,7 @@
                     <option value="0">JNO</option>
                 </field>
             </fieldset>
-			
-				
-
-			
-           
+	
         </fields>
     </config>
 </extension>
