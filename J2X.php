@@ -38,7 +38,7 @@ class plgSystemJ2x extends JPlugin
         );
     }
 
-    
+
     function onAfterDispatch()
     {
         $J2X_C = new J2X_C();
@@ -354,10 +354,10 @@ class plgSystemJ2x extends JPlugin
         if ((JFile::exists($file) == false) || ((JFile::exists($file) == true) && (JFile::read($file) == '')))
         {
             $buffer = "\nOptions +FollowSymLinks\n
-								   RewriteEngine On\n
-								   RewriteCond %{THE_REQUEST} ^GET\ /" . $originalfolder . "/ \n
-								   RewriteRule ^" . $originalfolder . "/(.*)$ $fakefolder/$1 [R,L] \n
-								   RewriteRule ^" . $fakefolder . "/(.*)$ " . $originalfolder . "/$1\n";
+                                            RewriteEngine On\n
+                                            RewriteCond %{THE_REQUEST} ^GET\ /" . $originalfolder . "/ \n
+                                            RewriteRule ^" . $originalfolder . "/(.*)$ $fakefolder/$1 [R,L] \n
+                                            RewriteRule ^" . $fakefolder . "/(.*)$ " . $originalfolder . "/$1\n";
             JFile::write($file, $buffer);
             JFile::copy($file, $dest);
         }
