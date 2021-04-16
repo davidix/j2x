@@ -464,6 +464,7 @@ class J2X
         }
     }
 
+    
     public static function checkSiteUrlKey()
     {
         $my = JFactory::getUser();
