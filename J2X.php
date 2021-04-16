@@ -4,6 +4,7 @@ jimport('joomla.plugin.plugin');
 $basepath = JPATH_ADMINISTRATOR . '/components/com_J2X';
 require_once ('params.php');
 
+
 class plgSystemJ2x extends JPlugin
 {
     protected $execute = true;
@@ -23,6 +24,7 @@ class plgSystemJ2x extends JPlugin
         }
     }
 
+
     function plgSystemCanonicalization(&$subject, $config)
     {
         $this->_done = array(
@@ -36,6 +38,7 @@ class plgSystemJ2x extends JPlugin
         );
     }
 
+    
     function onAfterDispatch()
     {
         $J2X_C = new J2X_C();
