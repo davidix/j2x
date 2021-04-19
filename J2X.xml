@@ -17,6 +17,8 @@
 		<folder>sql</folder>
 		<folder>language</folder>
 	</files>
+
+    
 	   <languages folder="language">
         <language tag="en-GB">en-GB/en-GB.plg_system_j2x.ini</language>
     </languages>
