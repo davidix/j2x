@@ -3,12 +3,12 @@
 	<name>System - SDX_J2X</name>
 	<creationDate>November 2016</creationDate>
 	<author>Davidix</author>
-	<copyright>Copyright 2016 SayanSystem</copyright>
-    <authorEmail>cms@sayansystem.net</authorEmail>
-    <authorUrl>www.sayansystem.net</authorUrl>
+	<copyright>Copyright Davidix 2020</copyright>
+    <authorEmail>davidix.ir</authorEmail>
+    <authorUrl>davidix.ir</authorUrl>
 	<version>1.8</version>
 	<license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPL</license>
-	<description>SDX_J2X by SayanSystem</description>
+	<description>SDX_J2X by Davidix</description>
 	<files>
 		<filename plugin="J2X">J2X.php</filename>
 		<filename>params.php</filename>
