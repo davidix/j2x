@@ -463,9 +463,6 @@ class J2X
             }
         }
     }
-
-    
-
     
     public static function checkSiteUrlKey()
     {
