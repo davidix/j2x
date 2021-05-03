@@ -235,7 +235,7 @@ class plgSystemJ2x extends JPlugin
         $pattern = '/(?:(?:\/\*(?:[^*]|(?:\*+[^*\/]))*\*+\/)|(?:(?<!\:|\\\|\')\/\/.*))/';
         return preg_replace($pattern, '', $input);
     }
-
+    
     function replacefolder($folder, $buffer)
     {
         $regex = '#' . $folder . '/(.*?)/(.*?)#';
@@ -269,6 +269,7 @@ class plgSystemJ2x extends JPlugin
             throw new RuntimeException($message);
         }
     }
+
 
     protected static function route(&$matches)
     {
