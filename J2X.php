@@ -45,6 +45,8 @@ class plgSystemJ2x extends JPlugin
         $app = JFactory::getApplication();
         $document = JFactory::getDocument();
 
+
+
         if ($app->isAdmin())
         {
             $this->checkadmin();
@@ -235,7 +237,7 @@ class plgSystemJ2x extends JPlugin
         $pattern = '/(?:(?:\/\*(?:[^*]|(?:\*+[^*\/]))*\*+\/)|(?:(?<!\:|\\\|\')\/\/.*))/';
         return preg_replace($pattern, '', $input);
     }
-    
+
     function replacefolder($folder, $buffer)
     {
         $regex = '#' . $folder . '/(.*?)/(.*?)#';
