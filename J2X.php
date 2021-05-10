@@ -232,6 +232,8 @@ class plgSystemJ2x extends JPlugin
         return true;
     }
 
+
+    
     function No_Comment($input)
     {
         $pattern = '/(?:(?:\/\*(?:[^*]|(?:\*+[^*\/]))*\*+\/)|(?:(?<!\:|\\\|\')\/\/.*))/';
