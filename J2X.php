@@ -231,8 +231,6 @@ class plgSystemJ2x extends JPlugin
         JResponse::setBody($buffer);
         return true;
     }
-
-
     
     function No_Comment($input)
     {
