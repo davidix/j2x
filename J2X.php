@@ -250,6 +250,7 @@ class plgSystemJ2x extends JPlugin
 
     }
 
+    
     private function checkBuffer($buffer)
     {
         if ($buffer === null)
