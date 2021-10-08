@@ -188,7 +188,7 @@ class plgSystemJ2x extends JPlugin
                 }
             }
         }
-        /********* Remove EOL (Empty Space)*/
+        /* Remove EOL (Empty Space)*/
         $search = array(
             '/[^\S ]+/s',
             '/<!--(.|\s)*?-->/'
@@ -197,7 +197,7 @@ class plgSystemJ2x extends JPlugin
             "",
             ""
         );
-        /////////////////////////////////////
+        /*****/
         $tag_start = "<script>";
         $tag_end = "<\/script>";
         $contents = $buffer;
@@ -250,7 +250,6 @@ class plgSystemJ2x extends JPlugin
 
     }
 
-    
     private function checkBuffer($buffer)
     {
         if ($buffer === null)
