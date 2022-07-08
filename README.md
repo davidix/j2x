@@ -1,8 +1,8 @@
 # j2x
-joomla 2 X
+joomla 2 X (Hide joomla! name)
 ------------------
 # features
  - Rename Joomla ( Templates - plugins - Components - Modules )   
  - direcories Change The URL of admin login page  
- - Secure the output code
+ - Secure the output HTML code
  -  and alot more...
